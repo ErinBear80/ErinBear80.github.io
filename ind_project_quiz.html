@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Learn French Website</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="ind_project_example.css"/>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Practice Activities</h1>
+            <p>Remember to practice every day!</p>
+        </div>
+
+        <div class="topnav">
+            <a href="ind_project_example.html">Home</a>
+            <a href="ind_project_userguide.html">User Guide</a>
+            <a href="ind_project_travel.html">Travel Information</a>
+            <a href="ind_project_quiz.html">Quiz</a>
+        </div>
+
+        <div class="text">
+            <h2>Let's Practice</h2>
+            <p>Directions: Click the text to reveal the French translation.</p>
+            <div>
+                <span onclick='displayAnswer("helloAnswer")'>Hello -  </span>
+                <span id="helloAnswer" style="display: none">   Bonjour</span>
+            </div>
+            <div>
+                <span onclick='displayAnswer("goodByeAnswer")'>Goodbye -  </span>
+                <span id="goodByeAnswer" style="display: none">   Au revoir</span>
+            </div>
+        </div>
+        <hr/>
+        <div class="text">
+            <h2>Let's Practice 2!</h2>
+            <p>Qu'est-ce que c'est? (What's this?)</p>
+            <button type="button" onclick="flipCard('side', 'train_station.jpeg')" style="margin: 15px">Click to flip the card</button>
+            
+            <img id="side" src="train_station.jpeg" style="width: 250px; display: inline"/>
+            
+            <button type="button" onclick="flipCard('side', 'flashcard_answer.jpg')" style="margin: 15px">Click to flip the card</button>
+        </div>
+        <hr/>
+        <!--conditional example-->
+        <div class="text">
+            <h2>Let's Practice 3!</h2>
+            <p>Directions: Click the text to switch languages.</p>
+            <div>
+                <p><span id="howAreId" onclick='swapText("howAreId", "How are you?", "Comment allez-vous?")'>How are you?</span></p>
+            </div>
+            <div>
+                <p><span id="doingWellId" onclick='swapText("doingWellId", "I am doing well.", "Je vais bien.")'>I am well.</span></p>
+            </div>
+        </div>
+        <hr/>
+        <!--conditional example-->
+        <div class="text">
+            <h2>Self Assessment</h2>
+            <p>Directions: Mark the words that you know in French in green. Hover your mouse to change the color.</p>
+            <p id="IHave" class ="box" onmouseenter="changeStyle('IHave')">I have</p>
+            <p id="youInf" class ="box" onmouseenter="changeStyle('youInf')">You have (informal)</p>
+            <p id="heHas" class ="box" onmouseenter="changeStyle('heHas')">He has</p>
+            <p id="sheHas" class ="box" onmouseenter="changeStyle('sheHas')">She has</p>
+            <p id="weHave" class ="box" onmouseenter="changeStyle('weHave')">We have</p>
+            <p id="youFor" class="box" onmouseenter="changeStyle('youFor')">You have (formal)</p>
+            <p id="they" class="box" onmouseenter="changeStyle('they')">They have (males only)</p>
+            <p id="theyHave" class="box" onmouseenter="changeStyle('theyHave')">They have (females or mixed group)</p>
+            <div class="row"></div>
+        </div>
+        <hr/>
+        <!--conditional example-->
+        <div class="text">
+            <h2>Let's Practice 4!</h2>
+            <p>Directions: Type the French translation.</p>
+            <p>How do you say "Hello" in French?</p>
+            <input type="text" id="helloAnswer2" style="margin: 15px"/>
+            <button onclick="checkAnswer()" type="button">Check Answer</button>
+            <p id="feedback" class="text"></p>
+        </div>
+        <hr/>
+        <!--loop example-->
+        <div class="text">
+            <h2>Let's Practice 5!</h2>
+            <button onclick="numbers()" type="button" style="margin-left: 15px">Click here to practice French numbers</button>
+        </div>
+        <hr/>
+        <!--array example-->
+        <div class="text">
+            <h2>World Geography</h2>
+            <p>Enter a country to see if French is an official language.</p>
+            <input id="enterCountry" type="text" style="margin: 15px"/>
+            <button onclick="francophoneCountries()" type="button">Check Answer</button>
+            <p id="countryFeedback"></p>
+        </div>
+        
+        <footer id="footer">
+            <p>Website created by: Caroline</p>
+            <p>Last updated August 2020</p>
+        </footer>
+        
+        <script src="ind_project.js"></script>
+
+    </body>
+</html>
