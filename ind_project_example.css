@@ -27,7 +27,7 @@ body {
   display: block;
   color: #b2de1f;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 16px; 
   text-decoration: none;
   font-family: monospace, "times new roman";
 }
@@ -87,4 +87,35 @@ h2 {
 
 .maintext {
     font-size: 15px;
+}
+
+.box {
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+    float: left;
+    padding: 30px;
+    text-align: center;
+    background-color: #1fb2de;
+    border-radius: 8px;
+}
+
+.boxselected {
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+    float: left;
+    padding: 30px;
+    text-align: center;
+    background-color: #52de1f;
+    border-radius: 8px;
+}
+
+button {
+    border-radius: 8px;
+    background-color: #1fdeab;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 5px 0 rgba(0,0,0,0.2);
+    padding: 8px;
 }
